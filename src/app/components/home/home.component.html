@@ -1,0 +1,17 @@
+<h2>Latest posts</h2>
+
+<div *ngIf="posts">
+  <p *ngFor="let post of posts;">{{post.title}}</p>
+</div>
+
+<preloader-small></preloader-small>
+
+<button class="courses__load-more"
+        (click)="getPosts('small')">
+  Load with small preloader
+</button>
+
+<button class="courses__load-more"
+        (click)="getPosts('full')">
+  Load with full preloader
+</button>

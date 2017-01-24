@@ -1,0 +1,19 @@
+.preloader-small {
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+  height: 25px;
+  animation: preloaderSmallRotate 1s infinite linear;
+  border: 3px solid #000;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes preloaderSmallRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
